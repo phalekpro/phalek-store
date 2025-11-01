@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phalek Store — Le code, la foi et la vision.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">Phalek Store</div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="/" class="logo">Phalek<span>Store</span></a>
+            <div class="nav-links">
+                <a href="/">Accueil</a>
+                <a href="#about">À propos</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero -->
+    <section class="hero" id="home">
+        <div class="particles-container" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <img src="assets/profile.png" alt="Yapo Atsé Phalek Ariel" onerror="this.style.display='none'">
+                        <div class="profile-halo"></div>
+                    </div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="typewriter-text" id="typewriter"></span>
+                </h1>
+                <p class="hero-subtitle">Développeur web & mobile • IA • Innovation</p>
+                <button class="cta-button" onclick="scrollToSection('about')">
+                    Découvrir mes projets ↓
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">Salut 👋 Je suis <strong>Yapo Atsé Phalek Ariel</strong>, alias <strong>Phalek</strong>.</p>
+                    <p>Étudiant en licence 1, passionné par l'informatique depuis l'enfance.</p>
+                    <p>Développeur web & mobile (Flutter, Python, HTML, CSS), explorateur de l'intelligence artificielle (DeepSeek, API, IA génératives).</p>
+                    <p class="about-philosophy">Je crée, j'apprends, je m'adapte, et je construis des outils utiles pour ma génération.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-tag">Flutter</div>
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">HTML/CSS</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">IA</div>
+                        <div class="skill-tag">DeepSeek</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- UPB Présence -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">UPB Présence</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">UPB Présence</h3>
+                        <p class="project-description">Système intelligent de gestion de présence avec QR Code pour l'Université Polytechnique de Bingerville.</p>
+                        <button class="project-button" onclick="window.location.href='/upb-presence'">Découvrir</button>
+                    </div>
+                </div>
+
+                <!-- Seph Saveur -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Seph Saveur</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Seph Saveur</h3>
+                        <p class="project-description">Venez goûter aux magnifiques paninis de qualité supérieure. Glovo familial pour étudiants UPB.</p>
+                        <button class="project-button" onclick="window.location.href='/seph-saveur'">Découvrir</button>
+                    </div>
+                </div>
+
+                <!-- Évaluation Numérique -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">Évaluation Numérique</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Évaluation Numérique UPB</h3>
+                        <p class="project-description">Système sécurisé d'évaluations sur ordinateur avec anti-triche et surveillance webcam.</p>
+                        <button class="project-button" onclick="window.location.href='/evaluation-numerique'">Découvrir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>phalek.pro@gmail.com</p>
+                            <button class="copy-btn" onclick="copyToClipboard('phalek.pro@gmail.com')">
+                                Copier
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+225 01 51 18 68 12</p>
+                            <button class="copy-btn" onclick="copyToClipboard('+2250151186812')">
+                                Copier
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-note">
+                        <p>💡 <strong>Disponible pour:</strong></p>
+                        <p>Développement d'applications • Projets innovants • Collaborations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2025 Phalek — Le code, la foi et la vision.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialisation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Loader
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 2000);
+
+            // Effet de particules
+            createParticles();
+            
+            // Animation de frappe
+            startTypewriter();
+            
+            // Scroll events
+            window.addEventListener('scroll', handleScroll);
+        });
+
+        // Effet de particules
+        function createParticles() {
+            const container = document.getElementById('particles');
+            const particleCount = 15;
+            
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Position aléatoire
+                const size = Math.random() * 100 + 50;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const delay = Math.random() * 5;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.animationDelay = `${delay}s`;
+                particle.style.opacity = Math.random() * 0.1 + 0.05;
+                
+                container.appendChild(particle);
+            }
+        }
+
+        // Animation de frappe
+        function startTypewriter() {
+            const text = "Yapo Atsé Phalek Ariel";
+            const element = document.getElementById('typewriter');
+            let index = 0;
+            
+            function type() {
+                if (index < text.length) {
+                    element.innerHTML += text.charAt(index);
+                    index++;
+                    setTimeout(type, 100);
+                }
+            }
+            
+            setTimeout(type, 1000);
+        }
+
+        // Gestion du scroll
+        function handleScroll() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+
+        // Scroll vers une section
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const headerHeight = document.getElementById('header').offsetHeight;
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Fonction de copie vers le clipboard
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showNotification('✅ Copié dans le presse-papier !');
+            }).catch(err => {
+                console.error('Erreur de copie : ', err);
+                showNotification('❌ Erreur lors de la copie');
+            });
+        }
+
+        // Fonction pour afficher les notifications
+        function showNotification(message) {
+            // Créer l'élément de notification
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: var(--orange-primary);
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+                box-shadow: 0 5px 15px rgba(255, 122, 0, 0.3);
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Supprimer après 3 secondes
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    if (document.body.contains(notification)) {
+                        document.body.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Ajouter les animations CSS pour les notifications
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Effet de rebond pour le bouton CTA
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
+        });
+
+        // Animation au scroll pour les cartes de projet
+        function initScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observer les éléments à animer
+            document.querySelectorAll('.project-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        }
+
+        // Initialiser les animations au scroll
+        initScrollAnimations();
+    </script>
+</body>
+</html>
