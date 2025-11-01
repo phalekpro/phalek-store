@@ -8,18 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
- <!-- Header -->
-<header id="header">
-    <nav class="nav-container">
-        <a href="index.html" class="logo">Phalek<span>Store</span></a>
-        <div class="nav-links">
-            <a href="index.html">Accueil</a>
-            <a href="index.html#projects">Projets</a>
-            <a href="index.html#contact">Contact</a>
-        </div>
-    </nav>
-</header>
-
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="https://phalekpro.github.io/phalek-store/" class="logo">Phalek<span>Store</span></a>
+            <div class="nav-links">
+                <a href="https://phalekpro.github.io/phalek-store/">Accueil</a>
+                <a href="https://phalekpro.github.io/phalek-store/#projects">Projets</a>
+                <a href="https://phalekpro.github.io/phalek-store/#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
     <!-- Hero Section UPB Présence -->
     <section class="project-hero">
         <div class="container">
@@ -261,7 +260,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -276,37 +275,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        function showWebLink() {
-            alert("🌐 Lien web étudiant:\n\nLe lien d'accès à la version web sera fourni par votre chef de classe pendant le cours.\n\n📞 Contact: phalek.pro@gmail.com");
-        }
-
-        // Animation au scroll
-        document.addEventListener('DOMContentLoaded', function() {
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-
-            // Observer les éléments à animer
-            document.querySelectorAll('.download-card, .instruction-card').forEach(el => {
-                el.style.opacity = '0';
-                el.style.transform = 'translateY(30px)';
-                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(el);
-            });
-        });
-    </script>
 </body>
-
 </html>
+
